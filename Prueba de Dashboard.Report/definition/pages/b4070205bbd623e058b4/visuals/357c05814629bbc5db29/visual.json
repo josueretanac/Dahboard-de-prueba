@@ -31,6 +31,29 @@
               "active": true
             }
           ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Repositorio"
+                        }
+                      },
+                      "Property": "Cambios"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Repositorio.Cambios)",
+              "nativeQueryRef": "Suma de Cambios"
+            }
+          ]
         }
       }
     },
@@ -51,6 +74,25 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "6f92451150998edd75d2",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Repositorio"
+                  }
+                },
+                "Property": "Cambios"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
