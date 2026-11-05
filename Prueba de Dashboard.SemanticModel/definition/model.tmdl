@@ -1,0 +1,19 @@
+model Model
+	culture: es-CR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-CR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Repositorio"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Repositorio
+
+ref cultureInfo es-CR
+
