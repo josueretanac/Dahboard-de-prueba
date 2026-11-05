@@ -9,6 +9,13 @@ table Repositorio
 
 		annotation SummarizationSetBy = Automatic
 
+	column Cambios = 1
+		formatString: 0
+		lineageTag: 59c421ac-e16f-4596-80fa-352ad6deb1ec
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Repositorio = m
 		mode: import
 		source =
